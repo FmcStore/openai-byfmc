@@ -1,11 +1,5 @@
 {
-  "version": 2,
-  "builds": [
-    { "src": "app/api/chat/route.js", "use": "@vercel/node" },
-    { "src": "app/page.jsx", "use": "@vercel/next" }
-  ],
-  "routes": [
-    { "src": "/api/(.*)", "dest": "/app/api/$1" },
-    { "src": "/(.*)", "dest": "/" }
-  ]
+  "buildCommand": "npm run build",
+  "outputDirectory": ".next",
+  "framework": "nextjs"
 }
